@@ -4,6 +4,7 @@ from email.message import EmailMessage
 import os
 from dotenv import load_dotenv
 import sys
+import asyncio
 #https://github.com/unnams/Agentic.git
 
 load_dotenv()
@@ -91,4 +92,5 @@ Expense Approval System
 if __name__ == "__main__":
 
     print("Starting MCP Expense Approval Server...", file=sys.stderr)
-    mcp.run(transport="stdio")
+    asyncio.run(mcp.run())
+⚠️ 
