@@ -91,6 +91,5 @@ Expense Approval System
 
 if __name__ == "__main__":
 
-    print("Starting MCP Expense Approval Server...", file=sys.stderr)
+   print("Starting MCP Expense Approval Server...", file=sys.stderr)
     asyncio.run(mcp.run())
-⚠️ 
