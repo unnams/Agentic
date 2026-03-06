@@ -89,5 +89,6 @@ Expense Approval System
 
 
 if __name__ == "__main__":
+
     print("Starting MCP Expense Approval Server...", file=sys.stderr)
-    mcp.run()
+    mcp.run(transport="stdio")
