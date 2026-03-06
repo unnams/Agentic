@@ -85,7 +85,7 @@ Expense Approval System
         print("Processing error:", e, file=sys.stderr)
         return f"Processing failed: {e}"
 
-if __name__ == "__main__":
-    print("Starting MCP Expense Approval Server...", file=sys.stderr)
-    mcp.run()
+# if __name__ == "__main__":
+#     print("Starting MCP Expense Approval Server...", file=sys.stderr)
+#     mcp.run()
 
