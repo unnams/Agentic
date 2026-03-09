@@ -1,0 +1,9 @@
+{
+  "source": {
+    "type": "filesystem",
+    "path": "agent.py"
+  },
+  "deployment": {
+    "platform": "horizon"
+  }
+}
