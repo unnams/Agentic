@@ -2,7 +2,7 @@ from mcp.server.fastmcp import FastMCP
 import smtplib
 from email.message import EmailMessage
 import nest_asyncio
-nest_asyncio.apply()  # Allows nested event loops for Horizon
+nest_asyncio.apply()   # Allows nested event loops for Horizon
 
 #from mcp.server.fastmcp import FastMCP
 # ... rest of your code
