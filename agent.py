@@ -1,8 +1,6 @@
 from mcp.server.fastmcp import FastMCP
 import smtplib
 from email.message import EmailMessage
-import nest_asyncio
-nest_asyncio.apply()   # Allows nested event loops for Horizon
 
 #from mcp.server.fastmcp import FastMCP
 # ... rest of your code
@@ -92,11 +90,9 @@ Expense Approval System
 async def main():
     await mcp.run_async(transport="http", host="0.0.0.0", port=8000)
 
-if __name__ == "__main__":
-    try:
-        asyncio.get_running_loop().create_task(main())  # Horizon context
-    except RuntimeError:
-        asyncio.run(main())  # Local testing
+
+
+
 
 # if __name__ == "__main__":
 #     print("Starting MCP Expense Approval Server...", file=sys.stderr)
