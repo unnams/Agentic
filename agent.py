@@ -88,7 +88,7 @@ Expense Approval System
         print("Processing error:", e, file=sys.stderr)
         return f"Processing failed: {e}"
 async def main():
-    await mcp.run_async(transport="http", host="0.0.0.0", port=8000)
+    await mcp.run_async(transport="stdio")
 
 
 
